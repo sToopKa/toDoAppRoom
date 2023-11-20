@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NotesAppRoom</string>
+    <string name="search_hint">Search Notes</string>
+    <string name="title">Title</string>
+    <string name="edit_note">Edit note</string>
+    <string name="delete">Delete</string>
+</resources>

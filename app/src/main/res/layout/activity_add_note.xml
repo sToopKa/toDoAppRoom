@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.AddNote">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imDone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_done"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:padding="8dp"/>
+
+            <ImageView
+                android:id="@+id/imBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back"
+                android:padding="8dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/editNote"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/edit_note"
+        android:inputType="text"
+        android:lineSpacingMultiplier="1.5"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTitle"
+        app:layout_constraintStart_toStartOf="@+id/editTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTitle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
